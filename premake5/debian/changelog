@@ -1,0 +1,15 @@
+premake5 (5.0.16) focal; urgency=medium
+
+  * https://github.com/premake/premake-core/
+  * commit 1c1304637f4f5e50ba8c57aae8d1d80ec3b7aaf2
+  * version 5.0-alpha16
+
+ -- JC <beaumanvienna@gmail.com>  Sun, 26 Sep 2021 08:15:00 -0700
+
+
+premake (3.5-0ubuntu1~dapper2) dapper; urgency=low
+
+  * Initial release
+
+ -- Ryan Mulder <rjmyst3@gmail.com>  Thu, 17 Apr 2008 20:27:22 -0400
+

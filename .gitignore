@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+Makefile
+bin
+bin-int
+
+# MSVC
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+#gmake2 files
+Makefile
+*.make
+build

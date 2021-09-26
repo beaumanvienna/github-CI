@@ -1,2 +1,2 @@
 # github-CI
-premake test
+Simple example project to test premake with GitHub CI

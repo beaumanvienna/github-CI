@@ -1,0 +1,15 @@
+Source: premake5
+Section: devel
+Priority: optional
+Maintainer: JC <beaumanvienna@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 4.1.4
+Vcs-Git: https://github.com/beaumanvienna/github-CI/premake5
+
+Package: premake5
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Build Script Generator
+ Premake allows to manage project configurations in one
+ place under multiple operating systems and for multiple
+ development environments. 
