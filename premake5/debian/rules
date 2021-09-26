@@ -27,7 +27,7 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 
-	$(MAKE) CONFIG=release clean
+	$(MAKE) -f Bootstrap.mak linux-clean PLATFORM=x64 CONFIG=release
 
 	dh_clean 
 
@@ -36,8 +36,8 @@ install: build
 	dh_testroot
 	dh_clean -k 
 	dh_installdirs
-
-	cp $(CURDIR)/bin/premake $(CURDIR)/debian/premake/usr/bin/premake5
+	mkdir -p $(CURDIR)/debian/premake5/usr/bin/
+	cp $(CURDIR)/bin/release/premake5 $(CURDIR)/debian/premake5/usr/bin/premake5
 
 binary-indep: build install
 
@@ -46,7 +46,7 @@ binary-arch: build install
 	dh_testroot
 	dh_installchangelogs $(CURDIR)/CHANGES.txt
 	dh_installdocs
-	dh_installman $(CURDIR)/debian/premake.1
+	dh_installman $(CURDIR)/debian/premake5.1
 	dh_link
 	dh_strip
 	dh_compress
